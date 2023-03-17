@@ -1,5 +1,6 @@
 package com.fastcampus.ch2;
 
+// ³¯Â¥ (year, month, day)
 public class MyDate {
 	private int year;
 	private int month;

@@ -2,6 +2,7 @@ package com.fastcampus.ch2;
 
 import java.lang.reflect.Method;
 
+// com.fastcampus.ch2.Hello클래스의 main()을 호출
 public class PrivateMethodCall {
 	public static void main(String[] args) throws Exception{
 //		Hello hello = new Hello();

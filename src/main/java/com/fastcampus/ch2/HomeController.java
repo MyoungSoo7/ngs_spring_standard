@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Handles requests for the application home page.
  */
-@Controller  // 1. 원격 호출 가능한 프로그램으로 등록
+// 1. 원격 호출 가능한 프로그램으로 등록
+@Controller
 public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home() {

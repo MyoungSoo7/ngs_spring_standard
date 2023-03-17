@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+// 두개의 주사위를 던져서 눈의 합이 7이 되는 경우를 출력
 @Controller // ctrl+shift+o는 자동 import
 public class TwoDice {
 	@RequestMapping("/rollDice")

@@ -4,6 +4,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.StringJoiner;
 
+// 1. YoilTeller클래스의 객체를 생성
 public class MethodInfo {
 	public static void main(String[] args) throws Exception{
 

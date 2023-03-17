@@ -16,7 +16,8 @@ public class Hello {
 		System.out.println(cv); // OK
 //		System.out.println(iv); // OK		
 	}
-	
+
+
 	public static void main2() { // static메서드 - cv만 사용가능
 		System.out.println(cv); // OK
 //		System.out.println(iv); // 에러

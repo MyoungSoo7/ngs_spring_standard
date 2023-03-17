@@ -17,20 +17,20 @@ public class RegisterController {
 	public String register() {
 		return "registerForm"; // WEB-INF/views/registerForm.jsp
 	}
-	
-//	@RequestMapping(value="/save", method=RequestMethod.POST)
-	@PostMapping("/save")  // 4.3부터 
+
+	//	@RequestMapping(value="/save", method=RequestMethod.POST)
+	@PostMapping("/save")  // 4.3부터
 	public String save(User user, Model m) throws Exception {
 		// 1. 유효성 검사
 		if(!isValid(user)) {
 			String msg = URLEncoder.encode("id를 잘못입력하셨습니다.", "utf-8");
-			
+
 			m.addAttribute("msg", msg);
 			return "forward:/register/add";
 //			return "redirect:/register/add?msg="+msg; // URL재작성(rewriting)
 		}
-		
-		// 2. DB에 신규회원 정보를 저장 
+
+		// 2. DB에 신규회원 정보를 저장
 		return "registerInfo";
 	}
 

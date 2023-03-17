@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 // 년월일을 입력하면 요일을 알려주는 프로그램
 @Controller
-public class YoilTeller { // http://localhost:8080/ch2/getYoil?year=2021&month=10&day=1
+public class YoilTeller { // http://localhost/ch2/getYoil?year=2021&month=10&day=1
 //    public static void main(String[] args) {
 		@RequestMapping("/getYoil")
         public void main(HttpServletRequest request, HttpServletResponse response) throws IOException {

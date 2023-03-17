@@ -9,14 +9,18 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+// 예외 처리
 @Controller
 public class ExceptionController {
+
+	//	catcher2 ( 널 , 파일 낫파운드)
 	@ExceptionHandler({NullPointerException.class, FileNotFoundException.class})
 	public String catcher2(Exception ex, Model m) {
 		m.addAttribute("ex", ex);
 		return "error";
 	}
 
+	// catcher (서버 에러러
 	@ExceptionHandler(Exception.class)
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR) // 200 -> 500
 	public String catcher(Exception ex, Model m) {
